@@ -47,31 +47,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Pranay2019/SmartKarrot.git
-  },
-  "@react-native-community/bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      [
-        "commonjs",
-        {
-          "flow": true
-        }
-      ],
-      "module",
-      "typescript"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "yarn eslint --fix",
-      "git add"
-    ]
   }
 }
