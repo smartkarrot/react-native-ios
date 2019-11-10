@@ -38,7 +38,7 @@ end
 
 Install package using: npm install
 
-//SmartKarrot is build in Swift so we have to do some setting changes to use this in objective class (AppDelegate.m)
+//SmartKarrot is built in Swift version so we need to do some setting changes to use this in objective class (AppDelegate.m)
 
 3) Set Define Modules to Yes:
 
@@ -71,6 +71,14 @@ const UserAttribute  = {
   country: 'country',
   language: 'language'
 }
+const options = {
+  title: 'Select Avatar',
+  customButtons: [{ name: 'fb', title: 'Choose Photo from Facebook' }],
+  storageOptions: {
+    skipBackup: true,
+    path: 'images',
+  },
+};
 
 Use these following methods to call in your js class
 
