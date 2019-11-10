@@ -62,23 +62,24 @@ Test *test = [[Test alloc]init];
 import {NativeModules} from 'react-native'
 
 const UserAttribute  = {
+
   userId: 'userId',
+  
   name: 'name',
+  
   emailId: 'emailId',
+  
   mobileNumber: 'mobileNumber',
+  
   dateOfBirth: 'dateOfBirth',
+  
   gender: 'gender',
+  
   country: 'country',
+  
   language: 'language'
+  
 }
-const options = {
-  title: 'Select Avatar',
-  customButtons: [{ name: 'fb', title: 'Choose Photo from Facebook' }],
-  storageOptions: {
-    skipBackup: true,
-    path: 'images',
-  },
-};
 
 Use these following methods to call in your js class
 
