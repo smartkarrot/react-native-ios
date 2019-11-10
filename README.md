@@ -6,7 +6,7 @@ A React Native module that allows you to use native files through bridging.
 
 1) Follow below guidelines and install these pods in your podfile 
 
-i) Set the iOS deployment target >= 10.0
+i) Set the iOS deployment target to >= 10.0
 
 platform :ios, '10.0'
 
@@ -16,7 +16,7 @@ use_frameworks!
 
 pod 'SmartKarrot-Core'
 pod 'SmartKarrot-Survey'
-pod 'SmartKarrot-Referral' 
+pod 'SmartKarrot-Referral'
 
 iii) Set swift version for any one of the targets
 
@@ -35,6 +35,7 @@ end
 
 Install package using: npm install
 
+//SmartKarrot is build in Swift so we have to do some setting changes to use this in objective class (AppDelegate.m)
 
 3) Set Define Modules to Yes:
 
@@ -50,6 +51,8 @@ Then configure AppId in AppDelegate.m class
 
 Test *test = [[Test alloc]init];
   [test setAppId:@"app-id"];
+  
+  Test -> Test is an Swift class where all the methods are implemented.
 
 # Usage
 
@@ -65,6 +68,8 @@ const UserAttribute  = {
   country: 'country',
   language: 'language'
 }
+
+Use these following methods to call in your js class
 
 1) NativeModules.Test.setUserId("user-id")}
 
