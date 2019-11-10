@@ -15,8 +15,11 @@ ii) Add these pods in podfile
 use_frameworks!
 
 pod 'SmartKarrot-Core'
+
 pod 'SmartKarrot-Survey'
+
 pod 'SmartKarrot-Referral'
+
 
 iii) Set swift version for any one of the targets
 
@@ -56,7 +59,7 @@ Test *test = [[Test alloc]init];
 
 # Usage
 
-import NativeModules from 'react-native';
+import {NativeModules} from 'react-native'
 
 const UserAttribute  = {
   userId: 'userId',
