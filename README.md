@@ -32,11 +32,11 @@ pre_install do |installer|
 end
 
 
-2) Add this package in dependencies in your package.josn file:
+2) Drag and drop iOS native files in to Xcode project, it will prompt add Bridging header to project. Click on Create Bridging header button.
 
-"smart-karrot": "https://github.com/Pranay2019/SmartKarrot.git"
+3) Add this line in your BridgingHeader.h file 
 
-Install package using: npm install
+#import "React/RCTBridgeModule.h" 
 
 //SmartKarrot is built in Swift version so we need to do some setting changes to use this in objective class (AppDelegate.m)
 
@@ -52,10 +52,10 @@ Ex: Target Name is Sample then #import "Sample-Swift.h"
 
 Then configure AppId in AppDelegate.m class
 
-Test *test = [[Test alloc]init];
-  [test setAppId:@"app-id"];
+SmartKarrot *smartKarrot = [[Test alloc]init];
+  [smartKarrot setAppId:@"app-id"];
   
-  Test -> Test is an Swift class where all the methods are implemented.
+  SmartKarrot -> SmartKarrot is an Swift class where all the methods are implemented.
 
 # Usage
 
@@ -81,10 +81,12 @@ const UserAttribute  = {
   
 }
 
-Use these following methods to call in your js class
+Use these following methods to call in your .js class
 
-1) NativeModules.Test.setUserId("user-id")}
+1) NativeModules.Test.setUserId("user-id")
 
-2) NativeModules.Test.setUserAttribute("English",UserAttribute.language)}
+2) NativeModules.Test.resetUserId()
 
-3) NativeModules.Test.logEventWithParameters("Job Details",{'key':'id','value':'123'})}
+2) NativeModules.Test.setUserAttribute("English",UserAttribute.language)
+
+3) NativeModules.Test.logEventWithParameters("Job Details",{'key':'id','value':'123'})
