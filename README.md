@@ -77,8 +77,8 @@ const UserAttribute  = {
 ```
 Use these following methods to call in your .js class
 ```
-1) NativeModules.Test.setUserId("user-id")
-2) NativeModules.Test.resetUserId()
-2) NativeModules.Test.setUserAttribute("English",UserAttribute.language)
-3) NativeModules.Test.logEventWithParameters("Job Details",{'key':'id','value':'123'})
+1) NativeModules.SmartKarrot.setUserId("user-id")
+2) NativeModules.SmartKarrot.resetUserId()
+2) NativeModules.SmartKarrot.setUserAttribute("English",UserAttribute.language)
+3) NativeModules.SmartKarrot.logEventWithParameters("ProductDetails",{'key':'id','value':'123'})
 ```
