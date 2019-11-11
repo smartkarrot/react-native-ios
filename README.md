@@ -38,7 +38,7 @@ end
 
 3) Add this line in BridgingHeader.h file 
 
-#import "React/RCTBridgeModule.h" 
+`#import "React/RCTBridgeModule.h"`
 
 //Pods are built in Swift version so we need to do some setting changes to use this in objective class (AppDelegate.m)
 
@@ -53,10 +53,10 @@ Open Xcode -> Build settings -> Packaging -> Define Modules -> Yes
 Ex: Target Name is SampleApp then #import "SampleApp-Swift.h"
 
 Then configure AppId in AppDelegate.m class
-
+```
 SmartKarrot *smartKarrot = [[Test alloc]init];
   [smartKarrot setAppId:@"app-id"];
-  
+  ```
   SmartKarrot -> SmartKarrot is an Swift class where all the methods are implemented.
 
 # Usage
