@@ -22,13 +22,15 @@ pod 'SmartKarrot-Core'
 
 iii) Set swift version for any one of the pod targets -> Because all the pods are written in swift
 
+```
 pre_install do |installer| 
 	installer.analysis_result.specifications.each do |s| 
         if s.name == 'AlamofireNetworkActivityIndicator' 
             s.swift_version = '5.0' 
         end 
     end 
-end 
+end
+```
 
 2) Download the files in to your system.
 
