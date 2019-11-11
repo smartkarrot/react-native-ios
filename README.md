@@ -34,7 +34,7 @@ end
 
 2) Download the files in to your system.
 
-3) Drag and drop iOS native files in to Xcode project, it will prompt add Bridging header to project. Click on 'Create Bridging header' button.
+3) Drag and drop SmartKarrot.m and SmartKarrot.swift files in to Xcode project, it will prompt add Bridging header to project. Click on 'Create Bridging header' button.
 
 3) Add this line in BridgingHeader.h file 
 
