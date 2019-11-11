@@ -18,7 +18,7 @@ use_frameworks!
 
  #Pods for YourTargetName
  
-pod 'SmartKarrot-Core'
+`pod 'SmartKarrot-Core'`
 
 iii) Set swift version for any one of the pod targets -> Because all the pods are written in swift
 
@@ -61,34 +61,24 @@ SmartKarrot *smartKarrot = [[Test alloc]init];
 
 # Usage
 
-import {NativeModules} from 'react-native'
+`import {NativeModules} from 'react-native'`
 
+```
 const UserAttribute  = {
-
   userId: 'userId',
-  
   name: 'name',
-  
   emailId: 'emailId',
-  
   mobileNumber: 'mobileNumber',
-  
   dateOfBirth: 'dateOfBirth',
-  
   gender: 'gender',
-  
   country: 'country',
-  
   language: 'language'
-  
 }
-
+```
 Use these following methods to call in your .js class
-
+```
 1) NativeModules.Test.setUserId("user-id")
-
 2) NativeModules.Test.resetUserId()
-
 2) NativeModules.Test.setUserAttribute("English",UserAttribute.language)
-
 3) NativeModules.Test.logEventWithParameters("Job Details",{'key':'id','value':'123'})
+```
