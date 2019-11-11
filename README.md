@@ -14,7 +14,7 @@ ii) Add these pod in your podfile
 
 target 'YourTargetName' do
 use_frameworks!
- # Pods for YourTargetName
+ #Pods for YourTargetName
 pod 'SmartKarrot-Core'
 
 iii) Set swift version for any one of the pod targets -> Because all the pods are written in swift
