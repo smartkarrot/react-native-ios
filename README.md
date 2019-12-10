@@ -54,7 +54,7 @@ Ex: Target Name is SampleApp then #import "SampleApp-Swift.h"
 
 Then configure AppId in AppDelegate.m class
 ```
-SmartKarrot *smartKarrot = [[Test alloc]init];
+SmartKarrot *smartKarrot = [[SmartKarrot alloc]init];
   [smartKarrot setAppId:@"app-id"];
   ```
   SmartKarrot -> SmartKarrot is an Swift class where all the methods are implemented.
